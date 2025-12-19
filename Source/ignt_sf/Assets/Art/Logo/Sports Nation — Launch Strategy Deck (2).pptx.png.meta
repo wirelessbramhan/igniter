@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: a33885b5cc50e4d0f96ba5095f9f931b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2205993924565015714
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_0"
+  - first:
+      213: 5056831852654107342
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_1"
+  - first:
+      213: -8443211714188963710
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_2"
+  - first:
+      213: 1956428070861825425
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_3"
+  - first:
+      213: -4239292891934027198
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_4"
+  - first:
+      213: 2846684443210071024
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_5"
+  - first:
+      213: 3292943771447680649
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_6"
+  - first:
+      213: 7473329244290454736
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_7"
+  - first:
+      213: 1045023894548123941
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_8"
+  - first:
+      213: -6997527710474506092
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_9"
+  - first:
+      213: -3926269932833609844
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_10"
+  - first:
+      213: -6896115634313609850
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_11"
+  - first:
+      213: -765114086965759829
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_12"
+  - first:
+      213: -1564137733694892535
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_13"
+  - first:
+      213: -6206260371215389055
+    second: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_14"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_0"
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 309
+        width: 692
+        height: 689
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53e1a5a63cb261e0800000000000000
+      internalID: -2205993924565015714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_1"
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 205
+        width: 108
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca145a17c97d2640800000000000000
+      internalID: 5056831852654107342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_2"
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 205
+        width: 106
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28099541eafa3da80800000000000000
+      internalID: -8443211714188963710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_3"
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 206
+        width: 113
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195625007f0a62b10800000000000000
+      internalID: 1956428070861825425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_4"
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 205
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2421f6553910b25c0800000000000000
+      internalID: -4239292891934027198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_5"
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 206
+        width: 96
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbba213b64718720800000000000000
+      internalID: 2846684443210071024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_6"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 206
+        width: 107
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e5972d9e2e2bd20800000000000000
+      internalID: 3292943771447680649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_7"
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 99
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4987f2a5996b760800000000000000
+      internalID: 7473329244290454736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_8"
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 99
+        width: 91
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521165002bba08e00800000000000000
+      internalID: 1045023894548123941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_9"
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 99
+        width: 80
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490f63f2f99c3ee90800000000000000
+      internalID: -6997527710474506092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_10"
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 99
+        width: 35
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87e7216c461389c0800000000000000
+      internalID: -3926269932833609844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_11"
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 159
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d38b62e531c40a0800000000000000
+      internalID: -6896115634313609850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_12"
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 99
+        width: 94
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba032c9aac4c165f0800000000000000
+      internalID: -765114086965759829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_13"
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 99
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906d453b4011b4ae0800000000000000
+      internalID: -1564137733694892535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sports Nation \u2014 Launch Strategy Deck (2).pptx_14"
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 99
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e6f16131feed9a0800000000000000
+      internalID: -6206260371215389055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_0": -2205993924565015714
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_1": 5056831852654107342
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_10": -3926269932833609844
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_11": -6896115634313609850
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_12": -765114086965759829
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_13": -1564137733694892535
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_14": -6206260371215389055
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_2": -8443211714188963710
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_3": 1956428070861825425
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_4": -4239292891934027198
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_5": 2846684443210071024
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_6": 3292943771447680649
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_7": 7473329244290454736
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_8": 1045023894548123941
+      "Sports Nation \u2014 Launch Strategy Deck (2).pptx_9": -6997527710474506092
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

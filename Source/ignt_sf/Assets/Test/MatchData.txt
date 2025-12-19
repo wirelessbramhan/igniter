@@ -1,0 +1,58 @@
+{
+  "MatchId": "MATCH_001",
+  "MatchName": "India vs Australia - 1st ODI",
+  "TeamA": {
+    "TeamId": "IND",
+    "TeamName": "India",
+    "Players": [
+      {
+        "PlayerId": "IND01",
+        "PlayerName": "Rohit Sharma",
+        "Role": "Batsman",
+        "Credits": 10.0,
+        "Points": 85.5
+      },
+      {
+        "PlayerId": "IND02",
+        "PlayerName": "Virat Kohli",
+        "Role": "Batsman",
+        "Credits": 10.0,
+        "Points": 90.0
+      },
+      {
+        "PlayerId": "IND03",
+        "PlayerName": "Ravindra Jadeja",
+        "Role": "AllRounder",
+        "Credits": 9.5,
+        "Points": 78.0
+      }
+    ]
+  },
+  "TeamB": {
+    "TeamId": "AUS",
+    "TeamName": "Australia",
+    "Players": [
+      {
+        "PlayerId": "AUS01",
+        "PlayerName": "David Warner",
+        "Role": "Batsman",
+        "Credits": 10.0,
+        "Points": 82.0
+      },
+      {
+        "PlayerId": "AUS02",
+        "PlayerName": "Pat Cummins",
+        "Role": "Bowler",
+        "Credits": 9.5,
+        "Points": 76.5
+      },
+      {
+        "PlayerId": "AUS03",
+        "PlayerName": "Glenn Maxwell",
+        "Role": "AllRounder",
+        "Credits": 9.0,
+        "Points": 80.0
+      }
+    ]
+  }
+}

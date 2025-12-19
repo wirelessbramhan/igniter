@@ -1,0 +1,6 @@
+{
+  "Userid": "1234",
+  "UserEmail": "test.email@test.com",
+  "AuthToken": "iufjkfiwklkfw16313",
+  "RefreshToken": "7eg21e67812e22kr"
+}

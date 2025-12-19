@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9163e28d7cd2467485a8cf9473eec28, type: 3}
+  m_Name: MatchDataSO
+  m_EditorClassIdentifier: 
+  MatchData:
+    MatchId: 
+    MatchName: 
+    TeamA:
+      TeamId: 
+      TeamName: 
+      Players: []
+    TeamB:
+      TeamId: 
+      TeamName: 
+      Players: []
+  DummyJson: {fileID: 4900000, guid: cc21ef226de944d59b30709cf7619293, type: 3}
+  IsValid: 0

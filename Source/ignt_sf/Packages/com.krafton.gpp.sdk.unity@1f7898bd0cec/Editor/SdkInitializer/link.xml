@@ -1,0 +1,39 @@
+﻿<linker>
+    <assembly fullname="com.krafton.gpp.sdk.unity" preserve="all"/>
+    <assembly fullname="com.krafton.gpp.sdk.unity.gpg">
+        <type fullname="Gpp.Extensions.GooglePlayGames.GppGooglePlayGames" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.push.firebase">
+        <type fullname="Gpp.Extensions.FirebasePush.GppFirebasePush" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.ga">
+        <type fullname="Gpp.Extensions.GoogleAnalytics.GppGoogleAnalytics" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.iap">
+        <type fullname="Gpp.Extensions.MobileIap.GppMobileIap" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.steam">
+        <type fullname="Gpp.Extensions.Steam.GppSteam" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.epic">
+        <type fullname="Gpp.Extensions.Epic.GppEpic" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.xbox">
+        <type fullname="Gpp.Extensions.Xbox.GppXbox" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.xbox.pc">
+        <type fullname="Gpp.Extensions.XboxPc.GppXboxPc" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.braze">
+        <type fullname="Gpp.Extensions.Braze.GppBraze" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.googlesignin">
+        <type fullname="Gpp.Extensions.GoogleSignIn.GppGoogleSignIn" preserve="all"/>
+    </assembly>
+    <assembly fullname="com.krafton.gpp.sdk.unity.mac">
+        <type fullname="Gpp.Extensions.Mac.GppMac" preserve="all"/>
+    </assembly>
+	<assembly fullname="com.krafton.gpp.sdk.unity.ps5">
+		<type fullname="Gpp.Extensions.Ps5.GppPs5" preserve="all"/>
+	</assembly>
+</linker>

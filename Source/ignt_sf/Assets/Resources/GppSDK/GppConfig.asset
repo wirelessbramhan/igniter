@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54573f32db74f20868725e879955853, type: 3}
+  m_Name: GppConfig
+  m_EditorClassIdentifier: 
+  activeStage: beta
+  stages:
+  - Stage: beta
+    Namespace: ignt_sports_fantasy
+    ClientId: b378e49864cd407d9a04d50411e8f1bc
+    BaseUrl: https://beta.gpp.krafton.dev
+    EnableDebugLog: 0
+    TelemetryIntervalSeconds: 60
+    EnableLoginAnotherAccount: 1
+    Extensions:
+      GoogleAnalytics:
+        ProjectId: 
+        WebClientId: 
+        ApiKey: 
+        AndroidAppId: 
+        IosAppId: 
+      FirebasePush:
+        EnableAutoRequestPermission: 0
+        ProjectId: 
+        SenderId: 
+        ApiKey: 
+        AndroidAppId: 
+        IosAppId: 
+      GooglePlayGames:
+        WebClientId: 
+      Braze:
+        AndroidApiKey: 
+        AndroidEndpoint: 
+        IosApiKey: 
+        IosEndpoint: 
+        SenderId: 
+      Steam:
+        SteamAppId: 
+      EpicGames:
+        EpicProductId: 
+        EpicSandboxId: 
+        EpicDeploymentId: 
+        EpicClientId: 
+        EpicClientSecret: 
+      GoogleSignIn:
+        ServerClientId: 
+      Xbox:
+        Scid: 
+      PS5:
+        ClientId: 
+    EnableGameServer: 0
+    EnableOwnershipSync: 1
+  - Stage: cert
+    Namespace: 
+    ClientId: 
+    BaseUrl: https://cert.gpp.krafton.io
+    EnableDebugLog: 0
+    TelemetryIntervalSeconds: 60
+    EnableLoginAnotherAccount: 1
+    Extensions:
+      GoogleAnalytics:
+        ProjectId: 
+        WebClientId: 
+        ApiKey: 
+        AndroidAppId: 
+        IosAppId: 
+      FirebasePush:
+        EnableAutoRequestPermission: 0
+        ProjectId: 
+        SenderId: 
+        ApiKey: 
+        AndroidAppId: 
+        IosAppId: 
+      GooglePlayGames:
+        WebClientId: 
+      Braze:
+        AndroidApiKey: 
+        AndroidEndpoint: 
+        IosApiKey: 
+        IosEndpoint: 
+        SenderId: 
+      Steam:
+        SteamAppId: 
+      EpicGames:
+        EpicProductId: 
+        EpicSandboxId: 
+        EpicDeploymentId: 
+        EpicClientId: 
+        EpicClientSecret: 
+      GoogleSignIn:
+        ServerClientId: 
+      Xbox:
+        Scid: 
+      PS5:
+        ClientId: 
+    EnableGameServer: 0
+    EnableOwnershipSync: 1
+  - Stage: live
+    Namespace: 
+    ClientId: 
+    BaseUrl: https://gpp.krafton.io
+    EnableDebugLog: 0
+    TelemetryIntervalSeconds: 60
+    EnableLoginAnotherAccount: 1
+    Extensions:
+      GoogleAnalytics:
+        ProjectId: 
+        WebClientId: 
+        ApiKey: 
+        AndroidAppId: 
+        IosAppId: 
+      FirebasePush:
+        EnableAutoRequestPermission: 0
+        ProjectId: 
+        SenderId: 
+        ApiKey: 
+        AndroidAppId: 
+        IosAppId: 
+      GooglePlayGames:
+        WebClientId: 
+      Braze:
+        AndroidApiKey: 
+        AndroidEndpoint: 
+        IosApiKey: 
+        IosEndpoint: 
+        SenderId: 
+      Steam:
+        SteamAppId: 
+      EpicGames:
+        EpicProductId: 
+        EpicSandboxId: 
+        EpicDeploymentId: 
+        EpicClientId: 
+        EpicClientSecret: 
+      GoogleSignIn:
+        ServerClientId: 
+      Xbox:
+        Scid: 
+      PS5:
+        ClientId: 
+    EnableGameServer: 0
+    EnableOwnershipSync: 1

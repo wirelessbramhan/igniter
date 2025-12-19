@@ -1,0 +1,11 @@
+framework module GppCommon {
+  umbrella header "GppCommon.h"
+  export *
+
+  module * { export * }
+}
+
+module GppCommon.Swift {
+  header "GppCommon-Swift.h"
+  requires objc
+}

@@ -1,0 +1,66 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GppCommonSwift
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import CoreTelephony
+import Foundation
+import Network
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public typealias AppSchemeCallback = (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
+@_inheritsConvenienceInitializers @objc(GppCommonSwift) public class GppCommonSwift : ObjectiveC.NSObject {
+  @objc public static func setAppSchemeCallback(_ callback: @escaping GppCommonSwift.AppSchemeCallback)
+  @objc public static func handleAppScheme(_ url: Foundation.URL)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GppDeviceNetworkInfo) public class GppDeviceNetworkInfo : ObjectiveC.NSObject {
+  public enum ConnectionType {
+    case none, wifi, cellular, loopback, ethernet
+    public static func == (a: GppCommonSwift.GppDeviceNetworkInfo.ConnectionType, b: GppCommonSwift.GppDeviceNetworkInfo.ConnectionType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  final public let observer: Network.NWPathMonitor
+  public var connectionType: GppCommonSwift.GppDeviceNetworkInfo.ConnectionType
+  @objc public func getDeviceNetworkInfo() -> Swift.String
+  @objc public func getCarrierName() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GppDeviceInfo) public class GppDeviceInfo : ObjectiveC.NSObject {
+  @objc public func getDeviceHardwareInfo() -> Swift.String
+  @objc public func getDeviceCountryCode() -> Swift.String
+  @objc public func getDeviceLanguageCode() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+public typealias PermissionGrantCallback = @convention(c) (Swift.Bool) -> Swift.Void
+public enum GppPermission : Swift.Int {
+  case None
+  case Push
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_cdecl("gppCommon_hasPermission")
+public func hasPermission(permission: Swift.Int, callback: GppCommonSwift.PermissionGrantCallback)
+public class GppCommonResponseSwift {
+  public init(responseCode: Swift.Int, responseMessage: Swift.String)
+  public func setResponseObject(_ responseObject: any Swift.Encodable)
+  public func toJsonString() -> Swift.String
+  @objc deinit
+}
+extension GppCommonSwift.GppDeviceNetworkInfo.ConnectionType : Swift.Equatable {}
+extension GppCommonSwift.GppDeviceNetworkInfo.ConnectionType : Swift.Hashable {}
+extension GppCommonSwift.GppPermission : Swift.Equatable {}
+extension GppCommonSwift.GppPermission : Swift.Hashable {}
+extension GppCommonSwift.GppPermission : Swift.RawRepresentable {}

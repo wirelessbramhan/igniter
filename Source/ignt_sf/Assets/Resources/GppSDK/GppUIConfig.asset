@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a40d70c9434063b3e20bb8592baf56, type: 3}
+  m_Name: GppUIConfig
+  m_EditorClassIdentifier: 
+  font: {fileID: 0}
+  maintenanceUI: {fileID: 0}
+  modalUI: {fileID: 0}
+  toastUI: {fileID: 0}
+  repayUI: {fileID: 0}
+  mobileLoginUI: {fileID: 4862727174248751506, guid: f12a8a52195ef4c1aacb4e2e296f143b, type: 3}
+  mobileLegalUI: {fileID: 0}
+  mobileJapanPaymentUI: {fileID: 0}
+  mobileGpgPopupUI: {fileID: 0}
+  pcLoginUI: {fileID: 0}
+  pcLegalUI: {fileID: 0}
+  pcAccountCheckUI: {fileID: 0}
+  pcAuthWaitingUI: {fileID: 0}

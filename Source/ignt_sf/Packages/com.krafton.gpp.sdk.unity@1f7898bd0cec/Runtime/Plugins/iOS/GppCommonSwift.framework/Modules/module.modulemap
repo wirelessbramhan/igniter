@@ -1,0 +1,4 @@
+framework module GppCommonSwift {
+  header "GppCommonSwift-Swift.h"
+  requires objc
+}

@@ -1,0 +1,18 @@
+{
+    "name": "fantasysports.UI",
+    "rootNamespace": "com.krafton.fantasysports.UI",
+    "references": [
+        "GUID:6546d7765b4165b40850b3667f981c26",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:614af4c2423d548f5a44cb5307a73f6d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

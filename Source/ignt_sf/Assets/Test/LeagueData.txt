@@ -1,0 +1,32 @@
+{
+  "leagues": [
+    {
+      "leagueId": "L001",
+      "leagueName": "Mega Grand League",
+      "prizePool": 500000,
+      "entryFee": 49,
+      "allowedUserTeamSlots": "0/3 Teams",
+      "totalTeamsJoined": 24322,
+      "matchId": "MATCH_001",
+
+      "teamAFlagImageUrl": "https://example.com/players/rohit_captain.png",
+      "teamBFlagImageUrl": "https://example.com/players/kohli_vicecaptain.png",
+      "teamACaptainImageUrl": "https://",
+      "teamBCaptainImageUrl": "https://"
+    },
+    {
+      "leagueId": "L002",
+      "leagueName": "Winner Takes All",
+      "prizePool": 100000,
+      "entryFee": 29,
+      "allowedUserTeamSlots": "1/3 Teams",
+      "totalTeamsJoined": 11200,
+      "matchId": "MATCH_001",
+
+     "teamAFlagImageUrl": "https://example.com/players/rohit_captain.png",
+      "teamBFlagImageUrl": "https://example.com/players/kohli_vicecaptain.png",
+      "teamACaptainImageUrl": "https://",
+      "teamBCaptainImageUrl": "https://"
+    }
+  ]
+} 

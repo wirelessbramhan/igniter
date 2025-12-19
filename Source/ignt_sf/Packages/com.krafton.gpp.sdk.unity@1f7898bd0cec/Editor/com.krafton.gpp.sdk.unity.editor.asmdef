@@ -1,0 +1,19 @@
+{
+    "name": "com.krafton.gpp.sdk.unity.editor",
+    "rootNamespace": "",
+    "references": [
+        "com.krafton.gpp.sdk.unity",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/PackageManager/GppPackageManager.uss?fileID=7433441132597879392&amp;guid=26a1dd98a57b4a0fa1bcfe8757466b07&amp;type=3#GppPackageManager" />
+    <ui:VisualElement name="Base" style="flex-grow: 1;">
+        <ui:ScrollView name="Packages">
+            <ui:VisualElement name="PackageTemplate" class="package" style="flex-grow: 1;">
+                <ui:VisualElement name="PackageInfo" class="package-info" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Mobile In-App Purchases" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DisplayName" class="package__display-name" />
+                    <ui:Label tabindex="-1" text="com.krafton.gpp.sdk.unity.iap" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PackageName" class="package__package-name" />
+                    <ui:Label tabindex="-1" text="The package for GPP mobile in-app purchases includes payment modules for Google Play Store, Galaxy Store, and App Store." parse-escape-sequences="true" display-tooltip-when-elided="true" name="Description" class="package__description" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Buttons" class="package__buttons" style="flex-grow: 1;">
+                    <ui:Button text="Install" parse-escape-sequences="true" display-tooltip-when-elided="true" name="InstallButton" class="package__buttons__button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="MobileContainer" class="container" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Mobile Extensions" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="container-title" />
+            </ui:VisualElement>
+            <ui:VisualElement name="PcContainer" class="container" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="PC Extensions" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="container-title" />
+            </ui:VisualElement>
+             <ui:VisualElement name="ConsoleContainer" class="container" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Console Extensions" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="container-title" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>
