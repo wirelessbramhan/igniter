@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 namespace ignt.sports.cricket.core
@@ -8,12 +7,13 @@ namespace ignt.sports.cricket.core
     /// </summary>
     public enum GState
     {
-        splash,
-        auth,
+        login,
         home,
-        select,
-        create,
-        profile,
+        leagueSelect,
+        teamCreate,
+        leaderboard,
+        userMatches,
+        userProfile,
         exit
     }
 

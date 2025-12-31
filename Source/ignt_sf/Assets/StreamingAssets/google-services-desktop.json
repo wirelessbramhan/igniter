@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1025673513060",
+    "project_id": "sports-nation-481401",
+    "storage_bucket": "sports-nation-481401.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025673513060:android:b14f426996b70d1f3eb771",
+        "android_client_info": {
+          "package_name": "com.krafton.fantasysports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025673513060-q7ekftigl1d7t5je20ahmrhukgmq872q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSr9ZWSGhP6TEjTwPzPMJQN7SUGt202X8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025673513060-q7ekftigl1d7t5je20ahmrhukgmq872q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

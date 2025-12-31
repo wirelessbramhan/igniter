@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,150 +8,160 @@ namespace ignt.sports.cricket.core
     public class GameStateManager : MonoBehaviour
     {
         [SerializeField]
-        private List<GameState> AllStates;
-        private int currentIndex = -1;
+        private List<GameState> StateList;
         [SerializeField]
-        private bool isSwitching = false;
+        private Dictionary<GState, GameState> AllStateDict;
         [SerializeField]
-        private GameState currentState;
+        private bool isSwitching = false, isLoaded;
+        public GameState CurrentState;
+        //Static Events for connection
+        public static event Action<GState> OnStateEnter, OnStateExit;
         [Header("Listening on"), Space(2)]
         public BoolEventChannelSO StateChangeChannel;
 
-        //Static Events for connection
-        public static event Action<GState> OnStateEnter, OnStateExit;
-
         void OnEnable()
         {
-            StateChangeChannel.OnEventRaised += ChangeState;
-            OnStateEnter += DebugState;
-        }
-
-        private void DebugState(GState state)
-        {
-            Debug.Log("GSM entry to state : " + state);
+            OnStateEnter += DebugStateEntry;
+            OnStateExit += DebugStateExit;
         }
 
         void OnDisable()
         {
-            StateChangeChannel.OnEventRaised -= ChangeState;
-            OnStateEnter -= DebugState;
-        }
-
-        private void ChangeState(bool change)
-        {
-            if (change)
-            {
-                SwitchStateNext();
-            }
-
-            else
-            {
-                SwitchStatePrev();
-            }
-        }
-
-        /// <summary>
-        /// Assigns names to GameStates for readability
-        /// </summary>
-        private void OnValidate()
-        {
-            if (AllStates != null && AllStates[0] != null)
-            {
-                if (AllStates.Count > 0 && AllStates[0] != null)
-                {
-                    foreach (var state in AllStates)
-                    {
-                        state.SetName();
-                    }
-                }
-            }
+            OnStateEnter += DebugStateEntry;
+            OnStateExit += DebugStateExit;
         }
 
         void Awake()
         {
             Application.targetFrameRate = 120;
+            isLoaded = false;
         }
 
-        private void Start()
+        private IEnumerator Start()
         {
-            currentState = null;
-            
-            //Sets Default state (0th index)
-            EnterDefaultState(1);
+            LoadDict();
+            yield return new WaitUntil(() => isLoaded);
+            //Sets Default state
+            EnterDefaultState(GState.login);
         }
 
         /// <summary>
-        /// switches gamestate from the state collection
+        /// Debugs current state entry
         /// </summary>
-        private void SwitchStateNext()
+        /// <param name="state">State key to change</param>
+        private void DebugStateEntry(GState state)
+        {
+            Debug.Log("GSM Enter State : " + state);
+        }
+
+        /// <summary>
+        /// Debugs current state exit
+        /// </summary>
+        /// <param name="state">State key to change</param>
+        private void DebugStateExit(GState state)
+        {
+            Debug.Log("GSM Exit State : " + state);
+        }
+
+        /// <summary>
+        /// Loads States by enum into Dictionary for Non-linear state transitions
+        /// </summary>
+        [ContextMenu("Load Dict")]
+        private void LoadDict()
+        {
+            if (!isLoaded)
+            {
+                AllStateDict = new();
+                foreach (var state in StateList)
+                {
+                    state.Name = state.StateKey.ToString();
+
+                    if (AllStateDict.ContainsKey(state.StateKey))
+                    {
+                        AllStateDict[state.StateKey] = state;
+                    }
+                    
+                    else
+                    {
+                        AllStateDict.Add(state.StateKey, state);
+                    }
+                }
+
+                isLoaded = (AllStateDict.Count == StateList.Count);
+            }
+        }
+
+        /// <summary>
+        /// switches individual gamestate from the state collection
+        /// </summary>
+        public void SwitchToLogin()
+        {
+            ChangeState(GState.login);
+        }
+
+        public void SwitchToHome()
+        {
+            ChangeState(GState.home);
+        }
+
+        public void SwitchToLeagueSelect()
+        {
+            ChangeState(GState.leagueSelect);
+        }
+
+        public void SwitchToTeamCreate()
+        {
+            ChangeState(GState.teamCreate);
+        }
+
+        public void SwitchToUserMatches()
+        {
+            ChangeState(GState.userMatches);
+        }
+
+        public void SwitchToUserProfile()
+        {
+            ChangeState(GState.userProfile);
+        }
+
+        public void SwitchToLeaderboards()
+        {
+            ChangeState(GState.leaderboard);
+        }
+
+        private void EnterDefaultState(GState key)
+        {
+            CurrentState = AllStateDict[key];
+
+            //Next State Enter
+            CurrentState.EnterState();
+            OnStateEnter?.Invoke(CurrentState.StateKey);
+        }
+
+        public void ChangeState(GState stateKey)
         {
             if (!isSwitching)
             {
                 isSwitching = true;
                 
-                if (currentIndex >= 0 && currentIndex < AllStates.Count)
+                if (AllStateDict.ContainsKey(stateKey))
                 {
                     //Previous state exit
-                    OnStateExit?.Invoke(currentState.StateKey);
-                    currentState.ExitState();
+                    OnStateExit?.Invoke(CurrentState.StateKey);
+                    CurrentState.ExitState();
                     
-                    currentIndex++;
-                    currentState = AllStates[currentIndex];
+                    //State Change
+                    CurrentState = AllStateDict[stateKey];
                     
                     //Next State Enter
-                    currentState.EnterState();
-                    OnStateEnter?.Invoke(currentState.StateKey);
+                    CurrentState.EnterState();
+                    OnStateEnter?.Invoke(CurrentState.StateKey);
                 }
-
-                //Debug.Log("Game entered " + currentState.Name + " State.");
 
                 isSwitching = false;
             }
 
-            else
-            {
-                Debug.Log("SM switching states already!!", this);
-            }
-        }
-
-        public void SwitchStatePrev()
-        {
-            if (!isSwitching)
-            {
-                isSwitching = true;
-                
-                if (currentIndex >= 0 && currentIndex < AllStates.Count)
-                {
-                    //Previous state exit
-                    OnStateExit?.Invoke(currentState.StateKey);
-                    currentState.ExitState();
-                    
-                    currentIndex--;
-                    currentState = AllStates[currentIndex];
-                    
-                    //Next State Enter
-                    currentState.EnterState();
-                    OnStateEnter?.Invoke(currentState.StateKey);
-                }
-
-                //Debug.Log("Game entered " + currentState.Name + " State.");
-
-                isSwitching = false;
-            }
-
-            else
-            {
-                Debug.Log("SM switching states already!!", this);
-            }
-        }
-
-        private void EnterDefaultState(int defaultindex)
-        {
-            currentIndex = defaultindex;
-            currentState = AllStates[currentIndex];
-
-            OnStateEnter?.Invoke(currentState.StateKey);
-            currentState.EnterState();
+            Debug.Log("GS is " + CurrentState.StateKey.ToString());
         }
 
     }

@@ -18,7 +18,7 @@ MonoBehaviour:
     Namespace: ignt_sports_fantasy
     ClientId: b378e49864cd407d9a04d50411e8f1bc
     BaseUrl: https://beta.gpp.krafton.dev
-    EnableDebugLog: 0
+    EnableDebugLog: 1
     TelemetryIntervalSeconds: 60
     EnableLoginAnotherAccount: 1
     Extensions:

@@ -24,7 +24,7 @@
       "hash": "6eee66190fb6d7182518cc3b41e3919e054699b6"
     },
     "com.krafton.gpp.sdk.unity": {
-      "version": "file:com.krafton.gpp.sdk.unity@1f7898bd0cec",
+      "version": "file:com.krafton.gpp.sdk.unity@4f979f9550be",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
@@ -41,6 +41,21 @@
       },
       "hash": "31b1208aa9964453ca3f1ff13de5ba6a379c9bff"
     },
+    "com.krafton.gpp.sdk.unity.gpg": {
+      "version": "https://github.krafton.com/gpp/gpp-unity-sdk.git?path=com.krafton.gpp.sdk.unity.gpg",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.krafton.gpp.sdk.unity": "^2.0.0"
+      },
+      "hash": "56e2792526540337d1aa76fa3f05665d3c3bc7ea"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.burst": {
       "version": "1.8.25",
       "depth": 2,
@@ -49,6 +64,13 @@
         "com.unity.mathematics": "1.2.1",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.collab-proxy": {
+      "version": "2.10.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
@@ -80,11 +102,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.26",
+      "version": "2.0.25",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.test-framework": "1.1.33"
+        "com.unity.test-framework": "1.1.31"
       },
       "url": "https://packages.unity.com"
     },
@@ -121,7 +143,7 @@
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.5",
-      "depth": 1,
+      "depth": 3,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -131,16 +153,6 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.project-auditor": {
-      "version": "1.0.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.nuget.mono-cecil": "1.10.1",
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
-      },
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
@@ -223,7 +235,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.8.10",
+      "version": "1.8.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {

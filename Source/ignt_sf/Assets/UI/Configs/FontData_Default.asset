@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0ee390c00d34e25bf0b04c946d0ade, type: 3}
+  m_Name: FontData_Default
+  m_EditorClassIdentifier: 
+  FontDatas:
+  - Name: title
+    FontType: 0
+    FontSize: 64
+    CharacterSpacing: 8
+  - Name: heading1
+    FontType: 1
+    FontSize: 56
+    CharacterSpacing: 4
+  - Name: heading2
+    FontType: 2
+    FontSize: 48
+    CharacterSpacing: 4
+  - Name: body
+    FontType: 3
+    FontSize: 32
+    CharacterSpacing: 4
+  - Name: hud
+    FontType: 4
+    FontSize: 28
+    CharacterSpacing: 4
+  - Name: cta
+    FontType: 5
+    FontSize: 40
+    CharacterSpacing: 8
+  FontAsset: {fileID: 11400000, guid: 65213b62e99f847ad81c223a2181d8e2, type: 2}

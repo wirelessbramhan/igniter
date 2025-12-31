@@ -1,4 +1,6 @@
 using System.Collections;
+using com.krafton.fantasysports.UI;
+using DG.Tweening;
 using ignt.sports.cricket.core;
 using TMPro;
 using UnityEngine;
@@ -23,32 +25,28 @@ namespace ignt.sports.cricket.UI
 
         [SerializeField]
         protected CanvasGroup CanvasGroup;
+        public DummyLeagueData DummyLeague;
+        public UserUIDataSO UserUIData;
         public void PopCard(float delay)
         {
-            if (!isLerping)
+            //Tween Card
+            if (TryGetComponent<RectTransform>(out var rect))
             {
-                StartCoroutine(PopCardDelayed(delay));
+                rect.DOShakeScale(0.5f, 1, 10, 30, false, ShakeRandomnessMode.Full);
             }
         }
 
         private IEnumerator PopCardDelayed(float delay)
         {
-            isLerping = true;
-            
-            yield return new WaitForSeconds(delay);
-            //Pop Card
-            transform.localScale = new(0.1f, 0.1f, 1.0f);
-
-            while (transform.localScale != Vector3.one)
-            {
-                transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.one, Time.deltaTime * 5.0f);
-                yield return null;
-            }
-
-            isLerping = false;
+            yield return null;
         }
 
-        private IEnumerator Start()
+        public void InitCard()
+        {
+            StartCoroutine(InitCardAsync());
+        }
+
+        private IEnumerator InitCardAsync()
         {
             yield return new WaitUntil(() => isLoaded);
 
@@ -97,6 +95,18 @@ namespace ignt.sports.cricket.UI
             seriesName = matchSeries;
             secondsLeft = timeleft;
             prizeAmount = prizeamount;
+
+            isLoaded = true;
+        }
+
+        public void SetData(DummyLeagueData leagueData)
+        {
+            DummyLeague = leagueData;
+            teamAName = leagueData.TeamA;
+            teamBName = leagueData.TeamB;
+            seriesName = leagueData.SeriesName;
+            secondsLeft = leagueData.SecondsLeft;
+            prizeAmount = leagueData.PrizeAmount;
 
             isLoaded = true;
         }

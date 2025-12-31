@@ -1,0 +1,43 @@
+{
+  "name": "com.krafton.gpp.sdk.unity",
+  "displayName": "Krafton Gpp Unity SDK",
+  "version": "2.13.0",
+  "unity": "2022.3",
+  "description": "This is the foundational Unity package for using the Krafton Global Publishing Platform. It includes essential functionalities for authentication & membership, telemetry, and various game operation features needed for managing game services.",
+  "keywords": [
+    "krafton",
+    "third party",
+    "unity",
+    "mobile",
+    "sdk",
+    "android",
+    "ios",
+    "gpp",
+    "kpp"
+  ],
+  "author": {
+    "name": "Krafton Inc",
+    "url": "https://www.krafton.com/"
+  },
+  "changelogUrl": "https://wiki.krafton.com/display/GGD/%5BUnity%5D%5B2.1.0%5D+Change+Log",
+  "documentationUrl": "https://wiki.krafton.com/display/GGD/%5BUnity%5D+Version+2.1.0",
+  "hideInEditor": false,
+  "homepage": "https://www.krafton.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.krafton.com/gpp/gpp-unity-sdk.git?path=/com.krafton.gpp.sdk.unity"
+  },
+  "bugs": "https://wiki.krafton.com/display/GGD/%5BUnity%5D%5B2.1.0%5D+Troubleshooting",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.1",
+    "com.unity.inputsystem": "1.13.1"
+  },
+  "samples": [
+    {
+      "displayName": "Gpp Unity SDK Sample",
+      "description": "This is a sample app for integrating the GPP Unity SDK Package.",
+      "path": "Samples~/GppSdkSample"
+    }
+  ],
+  "_fingerprint": "4f979f9550bef6e0db5a03387bb49ea0416f57f6"
+}

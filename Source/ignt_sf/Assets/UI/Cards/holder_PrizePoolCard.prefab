@@ -229,8 +229,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -696,9 +696,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6656146585604540603}
   - component: {fileID: 8099914755712596721}
+  - component: {fileID: 8554737808870705397}
   - component: {fileID: 4240697946412342560}
   - component: {fileID: 5914080112695166470}
-  - component: {fileID: 8554737808870705397}
   m_Layer: 5
   m_Name: holder_PrizePoolCard
   m_TagString: Untagged
@@ -735,6 +735,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4012708952614290895}
   m_CullTransparentMesh: 1
+--- !u!114 &8554737808870705397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012708952614290895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0077b286065a423896bced45d57d07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prizeAmount: 50
+  amountText: {fileID: 2854847275369654158}
+  PlayerCoins: {fileID: 11400000, guid: 5f03d98131eea42eeb2845e8fe96c601, type: 2}
 --- !u!114 &4240697946412342560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,21 +806,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &8554737808870705397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4012708952614290895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0077b286065a423896bced45d57d07a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prizeAmount: 0
-  amountText: {fileID: 2854847275369654158}
-  PlayerCoins: {fileID: 11400000, guid: 5f03d98131eea42eeb2845e8fe96c601, type: 2}
 --- !u!1 &4434345496864504752
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,14 +898,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 8
@@ -1429,7 +1429,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -32, y: -32}
+  m_SizeDelta: {x: -64, y: -64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &239947552672188645
 CanvasRenderer:
@@ -1517,6 +1517,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ignt.sports.cricket.core.BoolEventChannelSO, cricket.Core
         m_MethodName: RaiseEvent
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8554737808870705397}
+        m_TargetAssemblyTypeName: com.krafton.fantasysports.PrizeCard, fantasysports.UI
+        m_MethodName: DeductCoins
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

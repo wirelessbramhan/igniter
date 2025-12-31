@@ -1,7 +1,7 @@
 ﻿<Solution>
   <Project Path="Cricket.Network.csproj" />
-  <Project Path="Unity.ShaderGraph.Editor.csproj" />
   <Project Path="Unity.RenderPipelines.GPUDriven.Runtime.csproj" />
+  <Project Path="Unity.ShaderGraph.Editor.csproj" />
   <Project Path="com.krafton.gpp.sdk.unity.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.Runtime.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Runtime.csproj" />
@@ -13,15 +13,16 @@
   <Project Path="Unity.RenderPipelines.Universal.Editor.csproj" />
   <Project Path="AdjustSdk.Scripts.csproj" />
   <Project Path="UnityEngine.TestRunner.csproj" />
+  <Project Path="cricket.UI.csproj" />
   <Project Path="PPv2URPConverters.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Runtime.Shared.csproj" />
   <Project Path="Unity.TextMeshPro.Editor.csproj" />
   <Project Path="Tayx.Graphy.csproj" />
   <Project Path="RTLTMPro.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Unity.RenderPipeline.Universal.ShaderLibrary.csproj" />
   <Project Path="IngameDebugConsole.Runtime.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="com.krafton.gpp.sdk.unity.googlesignin.csproj" />
   <Project Path="cricket.Core.csproj" />
   <Project Path="AdjustSdk.Editor.csproj" />
@@ -30,8 +31,9 @@
   <Project Path="Unity.Rendering.LightTransport.Runtime.csproj" />
   <Project Path="Assembly-CSharp-firstpass.csproj" />
   <Project Path="RTLTMPro-Editor.csproj" />
+  <Project Path="com.krafton.gpp.sdk.unity.gpg.csproj" />
+  <Project Path="Unity.2D.Sprite.Editor.csproj" />
   <Project Path="Unity.Multiplayer.Center.Common.csproj" />
-  <Project Path="fantasysports.UI.csproj" />
   <Project Path="com.krafton.gpp.sdk.unity.editor.csproj" />
   <Project Path="IngameDebugConsole.Editor.csproj" />
   <Project Path="Unity.ShaderGraph.Utilities.csproj" />

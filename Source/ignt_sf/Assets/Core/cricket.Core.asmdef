@@ -1,6 +1,6 @@
 {
     "name": "cricket.Core",
-    "rootNamespace": "ignt.sports.cricket.core",
+    "rootNamespace": "com.krafton.fantasysports.core",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

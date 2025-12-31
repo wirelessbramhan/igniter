@@ -1,0 +1,31 @@
+﻿namespace Gpp.CommonUI
+{
+    public enum UIType
+    {
+        None,
+        Maintenance,
+        MobileLogin,
+        MobileLegal,
+        Modal,
+        Toast,
+        Survey,
+        PcSurvey,
+        MobileJapanPayment,
+        Coupon,
+        MobileGPGSPopup,
+        PcLogin,
+        PcAuthWaiting,
+        PcAccountCheck,
+        PcLegal,
+        RepayRequired,
+        SelectMainGameUserId,
+        ConsoleLogin,
+        ConsoleAuthWaiting,
+        ConsoleAccountCheck,
+        ConsoleLegal,
+        ConsoleMaintenance,
+        PcCheckEligibility,
+        PcMaintenance,
+        ConsoleCheckEligibility,
+    }
+}

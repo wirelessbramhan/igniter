@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd51d205016a4c07bdd6595c628a345, type: 3}
+  m_Name: LeagueData_Default
+  m_EditorClassIdentifier: 
+  DummyLeagues:
+  - Name: league1
+    SeriesName: Match Series1
+    TeamA: TeamA1
+    TeamB: TeamB1
+    SecondsLeft: 300
+    PrizeAmount: 1
+  - Name: league2
+    SeriesName: Match Series2
+    TeamA: TeamA2
+    TeamB: TeamB2
+    SecondsLeft: 310
+    PrizeAmount: 2
+  - Name: league3
+    SeriesName: Match Series3
+    TeamA: TeamA3
+    TeamB: TeamB3
+    SecondsLeft: 320
+    PrizeAmount: 3
+  - Name: league4
+    SeriesName: Match Series4
+    TeamA: TeamA4
+    TeamB: TeamB4
+    SecondsLeft: 330
+    PrizeAmount: 2
+  - Name: league5
+    SeriesName: Match Series5
+    TeamA: TeamA5
+    TeamB: TeamB5
+    SecondsLeft: 340
+    PrizeAmount: 3
+  - Name: league6
+    SeriesName: Match Series6
+    TeamA: TeamA6
+    TeamB: TeamB6
+    SecondsLeft: 350
+    PrizeAmount: 1

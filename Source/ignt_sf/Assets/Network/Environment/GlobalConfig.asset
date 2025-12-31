@@ -15,4 +15,4 @@ MonoBehaviour:
   KOSInitialization: {fileID: 11400000, guid: 399ed6d3d959645f59bd471b952e7e43, type: 2}
   AdsService: {fileID: 11400000, guid: b451b5091e8f54d8f9203726d3fbd1eb, type: 2}
   MmpService: {fileID: 11400000, guid: 37b6bbd8c20cd499c8e228bfc97455a2, type: 2}
-  AuthService: {fileID: 11400000, guid: 20847eb9243d945f29d0b94245327540, type: 2}
+  AuthService: {fileID: 11400000, guid: af81a2bc66af143e0b3eb79d3f115e58, type: 2}
