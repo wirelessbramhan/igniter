@@ -13,6 +13,8 @@ namespace com.krafton.fantasysports.UI
         private List<Image> playerBars;
         [SerializeField]
         private Button NextBtn;
+
+        public Button SaveBtn;
         void Awake()
         {
             CurrentTeam.Value.Players = null;
@@ -39,6 +41,9 @@ namespace com.krafton.fantasysports.UI
             }
 
             NextBtn.interactable = (CurrentTeam.PlayerCount == 11);
+            //SaveBtn.interactable = (CurrentTeam.CurrentCaptainCard != null && CurrentTeam.CurrentViceCaptainCard != null);
+            
+            
         }
     }
 }
