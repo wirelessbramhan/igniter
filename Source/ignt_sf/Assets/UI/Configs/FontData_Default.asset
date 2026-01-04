@@ -35,6 +35,6 @@ MonoBehaviour:
     CharacterSpacing: 4
   - Name: cta
     FontType: 5
-    FontSize: 40
+    FontSize: 36
     CharacterSpacing: 8
   FontAsset: {fileID: 11400000, guid: 65213b62e99f847ad81c223a2181d8e2, type: 2}

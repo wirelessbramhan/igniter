@@ -1,3 +1,4 @@
+using com.krafton.fantasysports.core;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,18 +18,26 @@ namespace ignt.sports.cricket.core
         //Static Events for connection
         public static event Action<GState> OnStateEnter, OnStateExit;
         [Header("Listening on"), Space(2)]
-        public BoolEventChannelSO StateChangeChannel;
+        public IntEventChannelSO StateChangeChannel;
 
         void OnEnable()
         {
             OnStateEnter += DebugStateEntry;
             OnStateExit += DebugStateExit;
+            StateChangeChannel.OnEventRaised += StateChangeChannel_OnEventRaised;
+        }
+
+        private void StateChangeChannel_OnEventRaised(int obj)
+        {
+            GState newStateKey = (GState)obj;
+            ChangeState(newStateKey);
         }
 
         void OnDisable()
         {
             OnStateEnter += DebugStateEntry;
             OnStateExit += DebugStateExit;
+            StateChangeChannel.OnEventRaised -= StateChangeChannel_OnEventRaised;
         }
 
         void Awake()

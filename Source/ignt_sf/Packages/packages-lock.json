@@ -1,21 +1,5 @@
 {
   "dependencies": {
-    "com.adjust.sdk": {
-      "version": "https://github.com/adjust/unity_sdk.git?path=Assets/Adjust",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "9fdaf1ae21efb824147f48a1324687933541c734"
-    },
-    "com.applovin.mediation.ads": {
-      "version": "8.5.1",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.google.external-dependency-manager": "1.2.182"
-      },
-      "url": "https://unity.packages.applovin.com"
-    },
     "com.google.external-dependency-manager": {
       "version": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm",
       "depth": 0,
@@ -57,7 +41,7 @@
       "dependencies": {}
     },
     "com.unity.burst": {
-      "version": "1.8.25",
+      "version": "1.8.26",
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -111,7 +95,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem": {
-      "version": "1.16.0",
+      "version": "1.17.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {

@@ -7,7 +7,7 @@ namespace com.krafton.fantasysports.UI
     {
         [Header("broadcasting on"), Space(2)]
         public BoolEventChannelSO AuthFadeChannel;
-        public BoolEventChannelSO HomeFadeChannel, SelectFadeChannel, CreateFadeChannel, MyMatchesFadeChannel, LeaderboardFadeChannel;
+        public BoolEventChannelSO HomeFadeChannel, LeeagueFadeChannel, TeamCreateFadeChannel, MyMatchesFadeChannel, LeaderboardFadeChannel;
 
         [Header("Data holders"), Space(2)]
         public UserUIDataSO UserData;
@@ -23,12 +23,18 @@ namespace com.krafton.fantasysports.UI
             GameStateManager.OnStateEnter += EnterView;
             GameStateManager.OnStateExit += ExitView;
         }
+
+        private void Start()
+        {
+            SetAllViews(true);
+        }
+
         private void SetAllViews(bool fade)
         {
-            AuthFadeChannel.RaiseEvent(fade);
+            //AuthFadeChannel.RaiseEvent(fade);
             HomeFadeChannel.RaiseEvent(fade);
-            SelectFadeChannel.RaiseEvent(fade);
-            CreateFadeChannel.RaiseEvent(fade);
+            LeeagueFadeChannel.RaiseEvent(fade);
+            TeamCreateFadeChannel.RaiseEvent(fade);
             MyMatchesFadeChannel.RaiseEvent(fade);
             LeaderboardFadeChannel.RaiseEvent(fade);
         }
@@ -39,7 +45,6 @@ namespace com.krafton.fantasysports.UI
             {
                 case GState.login:
                 SetUserData();
-                SetAllViews(true);
                 AuthFadeChannel.RaiseEvent(false);
                 break;
                 
@@ -49,11 +54,11 @@ namespace com.krafton.fantasysports.UI
                 
                 break;
                 case GState.leagueSelect:
-                SelectFadeChannel.RaiseEvent(false);
+                LeeagueFadeChannel.RaiseEvent(false);
 
                 break;
                 case GState.teamCreate:
-                CreateFadeChannel.RaiseEvent(false);
+                TeamCreateFadeChannel.RaiseEvent(false);
                 
                 break;
                 case GState.userMatches:
@@ -80,14 +85,14 @@ namespace com.krafton.fantasysports.UI
                 
                 break;
                 case GState.leagueSelect:
-                SelectFadeChannel.RaiseEvent(true);
+                LeeagueFadeChannel.RaiseEvent(true);
                 
                 //Reset User Credits
                 UserData.ResetCredits();
 
                 break;
                 case GState.teamCreate:
-                CreateFadeChannel.RaiseEvent(true);
+                TeamCreateFadeChannel.RaiseEvent(true);
                 
                 break;
                 case GState.userMatches:
@@ -103,7 +108,7 @@ namespace com.krafton.fantasysports.UI
 
         private void SetUserData()
         {
-            UserData.StartSession(100);
+            UserData.StartSession(1000);
             Debug.Log("ID is : " + UserData.UserID);
         }
     }

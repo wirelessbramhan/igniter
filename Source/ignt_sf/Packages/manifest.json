@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "com.adjust.sdk": "https://github.com/adjust/unity_sdk.git?path=Assets/Adjust",
-    "com.applovin.mediation.ads": "8.5.1",
     "com.google.external-dependency-manager": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm",
     "com.krafton.gpp.sdk.unity": "https://github.krafton.com/gpp/gpp-unity-sdk.git?path=/com.krafton.gpp.sdk.unity",
     "com.krafton.gpp.sdk.unity.googlesignin": "https://github.krafton.com/gpp/gpp-unity-sdk.git?path=com.krafton.gpp.sdk.unity.googlesignin",
@@ -10,7 +8,7 @@
     "com.unity.collab-proxy": "2.10.2",
     "com.unity.ide.rider": "3.0.38",
     "com.unity.ide.visualstudio": "2.0.25",
-    "com.unity.inputsystem": "1.16.0",
+    "com.unity.inputsystem": "1.17.0",
     "com.unity.mobile.android-logcat": "1.4.6",
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.nuget.newtonsoft-json": "3.2.2",

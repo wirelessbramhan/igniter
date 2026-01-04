@@ -22,33 +22,14 @@ namespace com.krafton.fantasysports.UI
             FadeChannel.OnEventRaised -= ToggleScreen;
         }
 
-        private void ShowScreen()
-        {
-            ToggleScreen(0.5f, false);
-        }
-
-        private void HideScreen()
-        {
-            ToggleScreen(0.5f, true);
-        }
-
-        private void ToggleScreen(float duration, bool hide)
-        {
-            if (TryGetComponent<RectTransform>(out var rect))
-            {
-                if (hide)
-                {
-                    rect.DOLocalMoveX(-1080, duration, true);
-                }
-
-                else
-                {
-                    rect.DOLocalMoveX(0, duration, true);
-                }
-            }
-        }
-
         private void ToggleScreen(bool hide)
+        {
+            shouldHide = hide;
+            Debug.Log("Fade raised " + hide + " for " + gameObject.name, this);
+            WipeScreen(shouldHide);
+        }
+
+        private void WipeScreen(bool hide)
         {
             if (TryGetComponent<RectTransform>(out var rect))
             {
@@ -63,8 +44,8 @@ namespace com.krafton.fantasysports.UI
                 }
             }
 
-            shouldHide = hide;
+            //Debug.Log("Fade raised " + hide + " for " + gameObject.name, this);
+
         }
-        
     }
 }

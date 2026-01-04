@@ -11,8 +11,8 @@ namespace ignt.sports.cricket.core
         home,
         leagueSelect,
         teamCreate,
-        leaderboard,
         userMatches,
+        leaderboard,
         userProfile,
         exit
     }

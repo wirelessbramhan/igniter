@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using com.krafton.fantasysports.core;
 using ignt.sports.cricket.core;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,11 @@ namespace com.krafton.fantasysports
         private List<Image> PlayerBars;
         [SerializeField]
         private Button nextStageButton, saveBtn;
-
+        [SerializeField]
+        private RectTransform PlayerCounter, MatchCard, TypeBtnPanel;
+        [SerializeField]
+        private TextMeshProUGUI FirstStageText, SecondStageText, SecondHeaderText;
+        [SerializeField] private bool hasChosenPlayers = false;
         void Awake()
         {
             StartSpawn(GState.teamCreate);
@@ -38,6 +43,8 @@ namespace com.krafton.fantasysports
 
         private void SpawnPlayerCards()
         {
+            hasChosenPlayers = false;
+
             for (int i = 0; i < PlayerData.DummyData.Count; i++)
             {
                 PlayerCard newCard = Instantiate(cardPrefab, SpawnTarget);
@@ -47,13 +54,15 @@ namespace com.krafton.fantasysports
             }
         }
 
-        [ContextMenu("Change Cards")]
-        public void ChangeCards()
+        [ContextMenu("Change Stage")]
+        public void LockSelection()
         {
             for (int i = 0; i < AllCards.Count; i++)
             {
                 AllCards[i].ChangeStage();
             }
+
+            hasChosenPlayers = true;
         }
 
         void Update()
@@ -76,6 +85,16 @@ namespace com.krafton.fantasysports
 
             nextStageButton.interactable = (UserDataHandler.CurrentTeam.PlayerCount == 11);
             saveBtn.interactable = (UserDataHandler.CurrentTeam.ViceCapt != null && UserDataHandler.CurrentTeam.Capt != null);
+
+            //Disable header panels
+            PlayerCounter.gameObject.SetActive(!hasChosenPlayers);
+            MatchCard.gameObject.SetActive(!hasChosenPlayers);
+            TypeBtnPanel.gameObject.SetActive(!hasChosenPlayers);
+
+            //Toggle text
+            FirstStageText.gameObject.SetActive(!hasChosenPlayers);
+            SecondStageText.gameObject.SetActive(hasChosenPlayers);
+            SecondHeaderText.gameObject.SetActive(hasChosenPlayers);
         }
     }
 }
